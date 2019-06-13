@@ -13,15 +13,17 @@ public class ArrayDeque<T> {
     }
 
     public void printDeque(){
-        for (T item: items){
-            System.out.print(item + " ");
+        for (int i = startingIndex; i < startingIndex + size; i ++){
+            if (items[i % items.length] != null) {
+                System.out.print(items[i % items.length] + " ");
+            }
         }
     }
     public int size(){
         return size;
     }
 
-    public void resize(int capacity){
+    private void resize(int capacity){
         T[] temp = (T[]) new Object[2 * capacity];
         for (int i = 0; i < size; i ++){
             temp[i] = items[(i + startingIndex) % items.length];
@@ -35,35 +37,33 @@ public class ArrayDeque<T> {
             resize(size);
             items[items.length - 1] = item;
             startingIndex = items.length - 1;
-        }else if(startingIndex - 1 < 0){
-            startingIndex = items.length - 1;
-            items[startingIndex] = item;
-        }else{
-            startingIndex -= 1;
-            items[startingIndex] = item;
+        }else {
+            //items[startingIndex % items.length] = item;
+            startingIndex = Math.floorMod((startingIndex - 1), items.length);
+            items[startingIndex % items.length] = item;
         }
         size ++;
 
 
     }
     public void addLast(T item){
-        if (size + 1 > items.length){
+        if (size + 1 > items.length) {
             resize(size);
             items[startingIndex + size] = item;
-        }else if (startingIndex + size > items.length){
-            items[(startingIndex + size) % items.length] = item;
         }else{
-            items[startingIndex + size] = item;
+            items[(startingIndex + size) % items.length] = item;
         }
+
         size ++;
     }
     public T removeFirst(){
         T ANS = items[startingIndex % items.length];
-        startingIndex = (startingIndex + 1) % items.length;
+        //startingIndex = (startingIndex + 1) % items.length;
         items[startingIndex] = null;
+        startingIndex = (startingIndex + 1) % items.length;
         size --;
-        double RUsage = size / items.length;
-        if (RUsage < 0.25){
+        double RUsage = (double) size / (double) items.length;
+        if (RUsage < 0.25 && items.length > 16){
             resize(size);
         }
         return ANS;
@@ -71,11 +71,12 @@ public class ArrayDeque<T> {
 
     }
     public T removeLast(){
-        T ANS = items[(startingIndex + size) % items.length];
-        items[(startingIndex + size) % items.length] = null;
+        int finalIndex = Math.floorMod((startingIndex + size - 1), items.length);
+        T ANS = items[finalIndex];
+        items[finalIndex] = null;
         size --;
-        double RUsage = size / items.length;
-        if (RUsage < 0.25){
+        double RUsage = (double) size / (double) items.length;
+        if (RUsage < 0.25 && items.length > 16){
             resize(size);
         }
         return ANS;
