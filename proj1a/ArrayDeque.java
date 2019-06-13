@@ -61,7 +61,8 @@ public class ArrayDeque<T> {
         //startingIndex = (startingIndex + 1) % items.length;
         items[startingIndex] = null;
         startingIndex = (startingIndex + 1) % items.length;
-        size --;
+        if (size > 0){
+            size --;}
         double RUsage = (double) size / (double) items.length;
         if (RUsage < 0.25 && items.length > 16){
             resize(size);
@@ -74,7 +75,8 @@ public class ArrayDeque<T> {
         int finalIndex = Math.floorMod((startingIndex + size - 1), items.length);
         T ANS = items[finalIndex];
         items[finalIndex] = null;
-        size --;
+        if (size > 0){
+            size --;}
         double RUsage = (double) size / (double) items.length;
         if (RUsage < 0.25 && items.length > 16){
             resize(size);

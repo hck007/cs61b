@@ -31,13 +31,19 @@ public class LinkedListDeque <T>{
     public void addFirst(T item){
         size += 1;
         Node x = new Node(null, item, null);
-        sentFront.next = x;
-
+        x.next = sentFront.next;
+        x.prev = sentFront;
+        x.next.prev = x;
+        x.prev.next = x;
      }
      public void addLast(T item){
         size += 1;
         Node x = new Node(null, item, null);
-        sentBack.prev = x;
+        x.next = sentBack;
+        x.prev = sentBack.prev;
+        x.prev.next = x;
+        x.next.prev = x;
+
 
      }
      public boolean isEmpty(){
@@ -47,7 +53,7 @@ public class LinkedListDeque <T>{
         return size;
      }
      public void printDeque(){
-        while (sentFront.next != null){
+        for (int i = size; i > 0; i--){
             System.out.print(sentFront.next.item + " ");
             sentFront.next = sentFront.next.next;
         }
@@ -58,8 +64,10 @@ public class LinkedListDeque <T>{
         }
         size -= 1;
         Node x = sentFront.next;
-        sentFront.next = sentFront.next.next;
-        return x.item;
+        T ANS = x.item;
+        x.next.prev = sentFront;
+        x.prev.next = x.next;
+        return ANS;
      }
      public T removeLast(){
         if (size == 0){
@@ -67,8 +75,10 @@ public class LinkedListDeque <T>{
         }
         size -= 1;
         Node x = sentBack.prev;
-        sentBack.prev.prev = sentBack.prev;
-        return x.item;
+        T ANS = x.item;
+        x.next.prev = x.prev;
+        x.prev.next = sentBack;
+        return ANS;
      }
     public T get(int index){
         Node node = sentFront.next;
