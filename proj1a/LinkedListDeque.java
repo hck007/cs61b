@@ -25,6 +25,7 @@ public class LinkedListDeque <T>{
             if (index == 0){
                 return sentFront.next.item;
             }
+            sentFront.next = sentFront.next.next;
             return sentFront.next.getRecursiveNode(index - 1);
         }
     }

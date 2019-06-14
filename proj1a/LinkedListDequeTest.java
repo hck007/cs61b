@@ -94,9 +94,10 @@ public class LinkedListDequeTest {
 		L.addLast(2);
 		L.addFirst(1);
 		L.addLast(3);
-		L.removeFirst();
+		L.addFirst(0);
+		//L.removeFirst();
 		//System.out.println(L.removeLast());
-		System.out.println(L.size());
-		L.printDeque();
+		System.out.println(L.getRecursive(3));
+		//L.printDeque();
 	}
 } 
