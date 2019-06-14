@@ -91,8 +91,10 @@ public class LinkedListDequeTest {
 		addRemoveTest();*/
 		LinkedListDeque L = new LinkedListDeque();
 		//System.out.print(L.isEmpty());
-		L.addLast(3);
+		L.addLast(2);
 		L.addFirst(1);
+		L.addLast(3);
+		L.removeFirst();
 		//System.out.println(L.removeLast());
 		System.out.println(L.size());
 		L.printDeque();

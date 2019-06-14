@@ -16,10 +16,10 @@ public class LinkedListDeque <T>{
         private Node prev;
         private Node next;
 
-        private Node(Node prev, T item, Node next) {
-            prev = prev;
-            item = item;
-            next = next;
+        private Node(Node p, T i, Node n) {
+            prev = p;
+            item = i;
+            next = n;
         }
         private T getRecursiveNode(int index){
             if (index == 0){
