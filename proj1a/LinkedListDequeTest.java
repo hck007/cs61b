@@ -91,13 +91,16 @@ public class LinkedListDequeTest {
 		addRemoveTest();*/
 		LinkedListDeque L = new LinkedListDeque();
 		//System.out.print(L.isEmpty());
-		L.addLast(2);
-		L.addFirst(1);
-		L.addLast(3);
-		L.addFirst(0);
-		//L.removeFirst();
+		L.addLast(0);
+		L.removeLast();
+		L.addFirst(2);
+		System.out.println(L.getRecursive(0));
+		L.addLast(4);
+		System.out.println(L.getRecursive(1));
+		L.addLast(6);
+		System.out.println(L.getRecursive(2));
 		//System.out.println(L.removeLast());
-		System.out.println(L.getRecursive(3));
+		//System.out.println(L.getRecursive(3));
 		//L.printDeque();
 	}
 } 

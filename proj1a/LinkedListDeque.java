@@ -21,12 +21,11 @@ public class LinkedListDeque <T>{
             item = i;
             next = n;
         }
-        private T getRecursiveNode(int index){
+        private T getRecursiveNode(Node x, int index){
             if (index == 0){
-                return sentFront.next.item;
+                return x.item;
             }
-            sentFront.next = sentFront.next.next;
-            return sentFront.next.getRecursiveNode(index - 1);
+            return getRecursiveNode(x.next, index - 1);
         }
     }
     public void addFirst(T item){
@@ -89,7 +88,8 @@ public class LinkedListDeque <T>{
         return node.item;
     }
     public T getRecursive(int index){
-        T ANS = sentFront.getRecursiveNode(index);
+        Node x = sentFront.next;
+        T ANS = x.getRecursiveNode(x, index);
         return ANS;
     }
 }
