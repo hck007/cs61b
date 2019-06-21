@@ -8,7 +8,7 @@ public class ArrayDeque<T> implements Deque<T> {
 
 
 
-    public ArrayDeque(){
+    public ArrayDeque() {
 
         size = 0;
 
@@ -26,9 +26,9 @@ public class ArrayDeque<T> implements Deque<T> {
 
 
     @Override
-    public void printDeque(){
+    public void printDeque() {
 
-        for (int i = startingIndex; i < startingIndex + size; i ++){
+        for (int i = startingIndex; i < startingIndex + size; i ++) {
 
             if (items[i % items.length] != null) {
 
@@ -40,7 +40,7 @@ public class ArrayDeque<T> implements Deque<T> {
 
     }
     @Override
-    public int size(){
+    public int size() {
 
         return size;
 
@@ -48,11 +48,11 @@ public class ArrayDeque<T> implements Deque<T> {
 
 
 
-    private void resize(int capacity){
+    private void resize(int capacity) {
 
         T[] temp = (T[]) new Object[2 * capacity];
 
-        for (int i = 0; i < size; i ++){
+        for (int i = 0; i < size; i ++) {
 
             temp[i] = items[(i + startingIndex) % items.length];
 
@@ -66,9 +66,9 @@ public class ArrayDeque<T> implements Deque<T> {
 
 
     @Override
-    public void addFirst(T item){
+    public void addFirst(T item) {
 
-        if (size + 1 > items.length){
+        if (size + 1 > items.length) {
 
             resize(size);
 
@@ -76,7 +76,7 @@ public class ArrayDeque<T> implements Deque<T> {
 
             startingIndex = items.length - 1;
 
-        }else {
+        } else {
 
             startingIndex = Math.floorMod((startingIndex - 1), items.length);
 
@@ -92,7 +92,7 @@ public class ArrayDeque<T> implements Deque<T> {
 
     }
     @Override
-    public void addLast(T item){
+    public void addLast(T item) {
 
         if (size + 1 > items.length) {
 
@@ -100,7 +100,7 @@ public class ArrayDeque<T> implements Deque<T> {
 
             items[startingIndex + size] = item;
 
-        }else{
+        } else {
 
             items[(startingIndex + size) % items.length] = item;
 
@@ -112,7 +112,7 @@ public class ArrayDeque<T> implements Deque<T> {
 
     }
     @Override
-    public T removeFirst(){
+    public T removeFirst() {
 
         T ANS = items[startingIndex % items.length];
 
@@ -122,13 +122,13 @@ public class ArrayDeque<T> implements Deque<T> {
 
         startingIndex = (startingIndex + 1) % items.length;
 
-        if (size > 0){
+        if (size > 0) {
 
             size --;}
 
         double RUsage = (double) size / (double) items.length;
 
-        if (RUsage < 0.25 && items.length > 16){
+        if (RUsage < 0.25 && items.length > 16) {
 
             resize(size);
 
@@ -142,7 +142,7 @@ public class ArrayDeque<T> implements Deque<T> {
 
     }
     @Override
-    public T removeLast(){
+    public T removeLast() {
 
         int finalIndex = Math.floorMod((startingIndex + size - 1), items.length);
 
@@ -150,13 +150,13 @@ public class ArrayDeque<T> implements Deque<T> {
 
         items[finalIndex] = null;
 
-        if (size > 0){
+        if (size > 0) {
 
             size --;}
 
         double RUsage = (double) size / (double) items.length;
 
-        if (RUsage < 0.25 && items.length > 16){
+        if (RUsage < 0.25 && items.length > 16) {
 
             resize(size);
 
@@ -166,7 +166,7 @@ public class ArrayDeque<T> implements Deque<T> {
 
     }
     @Override
-    public T get(int index){
+    public T get(int index) {
 
         T ANS = items[(startingIndex + index) % items.length];
 

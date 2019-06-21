@@ -13,5 +13,9 @@ public class TestOffByOne {
         assertTrue(actual);
         boolean actual2 = offByOne.equalChars('d', 'd');
         assertFalse(actual2);
+        boolean actual3 = offByOne.equalChars(' ', 'd' );
+        assertFalse(actual3);
+        boolean actual4 = offByOne.equalChars('A', 'b');
+
     }
 }

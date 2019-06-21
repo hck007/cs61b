@@ -8,7 +8,7 @@ public class LinkedListDeque<T> implements Deque<T> {
 
 
 
-    public LinkedListDeque(){
+    public LinkedListDeque() {
 
         size = 0;
 
@@ -44,9 +44,9 @@ public class LinkedListDeque<T> implements Deque<T> {
 
         }
 
-        private T getRecursiveNode(Node x, int index){
+        private T getRecursiveNode(Node x, int index) {
 
-            if (index == 0){
+            if (index == 0) {
 
                 return x.item;
 
@@ -58,7 +58,7 @@ public class LinkedListDeque<T> implements Deque<T> {
 
     }
     @Override
-    public void addFirst(T item){
+    public void addFirst(T item) {
 
         size += 1;
 
@@ -74,7 +74,7 @@ public class LinkedListDeque<T> implements Deque<T> {
 
     }
     @Override
-    public void addLast(T item){
+    public void addLast(T item) {
 
         size += 1;
 
@@ -100,15 +100,15 @@ public class LinkedListDeque<T> implements Deque<T> {
 
     }*/
 
-    public int size(){
+    public int size() {
 
         return size;
 
     }
     @Override
-    public void printDeque(){
+    public void printDeque() {
 
-        for (int i = size; i > 0; i--){
+        for (int i = size; i > 0; i--) {
 
             System.out.print(sentFront.next.item + " ");
 
@@ -118,9 +118,9 @@ public class LinkedListDeque<T> implements Deque<T> {
 
     }
     @Override
-    public T removeFirst(){
+    public T removeFirst() {
 
-        if (size == 0){
+        if (size == 0) {
 
             return null;
 
@@ -140,9 +140,9 @@ public class LinkedListDeque<T> implements Deque<T> {
 
     }
     @Override
-    public T removeLast(){
+    public T removeLast() {
 
-        if (size == 0){
+        if (size == 0) {
 
             return null;
 
@@ -162,11 +162,11 @@ public class LinkedListDeque<T> implements Deque<T> {
 
     }
     @Override
-    public T get(int index){
+    public T get(int index) {
 
         Node node = sentFront.next;
 
-        for (int i = 0; i < index; i ++){
+        for (int i = 0; i < index; i ++) {
 
             node = node.next;
 
@@ -176,7 +176,7 @@ public class LinkedListDeque<T> implements Deque<T> {
 
     }
 
-    public T getRecursive(int index){
+    public T getRecursive(int index) {
 
         Node x = sentFront.next;
 
