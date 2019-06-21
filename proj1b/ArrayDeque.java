@@ -28,7 +28,7 @@ public class ArrayDeque<T> implements Deque<T> {
     @Override
     public void printDeque() {
 
-        for (int i = startingIndex; i < startingIndex + size; i ++) {
+        for (int i = startingIndex; i < startingIndex + size; i++) {
 
             if (items[i % items.length] != null) {
 
@@ -52,7 +52,7 @@ public class ArrayDeque<T> implements Deque<T> {
 
         T[] temp = (T[]) new Object[2 * capacity];
 
-        for (int i = 0; i < size; i ++) {
+        for (int i = 0; i < size; i++) {
 
             temp[i] = items[(i + startingIndex) % items.length];
 
@@ -84,7 +84,7 @@ public class ArrayDeque<T> implements Deque<T> {
 
         }
 
-        size ++;
+        size++;
 
 
 
@@ -108,7 +108,7 @@ public class ArrayDeque<T> implements Deque<T> {
 
 
 
-        size ++;
+        size++;
 
     }
     @Override
@@ -124,7 +124,8 @@ public class ArrayDeque<T> implements Deque<T> {
 
         if (size > 0) {
 
-            size --;}
+            size--;
+        }
 
         double RUsage = (double) size / (double) items.length;
 
@@ -152,7 +153,8 @@ public class ArrayDeque<T> implements Deque<T> {
 
         if (size > 0) {
 
-            size --;}
+            size--;
+        }
 
         double RUsage = (double) size / (double) items.length;
 

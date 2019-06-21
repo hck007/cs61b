@@ -3,7 +3,7 @@ import static org.junit.Assert.*;
 public class TestOffByN {
     static CharacterComparator offByN = new OffByN(5);
     @Test
-    public void TestOffByN() {
+    public void testOffByN() {
         boolean actual = offByN.equalChars(' ', 'a');
         assertFalse(actual);
         boolean actual2 = offByN.equalChars('a', 'f');

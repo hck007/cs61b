@@ -166,7 +166,7 @@ public class LinkedListDeque<T> implements Deque<T> {
 
         Node node = sentFront.next;
 
-        for (int i = 0; i < index; i ++) {
+        for (int i = 0; i < index; i++) {
 
             node = node.next;
 

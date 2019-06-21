@@ -1,11 +1,11 @@
 public class Palindrome {
     public Deque<Character> wordToDeque(String word) {
-        Deque List = new ArrayDeque();
+        Deque aList = new ArrayDeque();
         for (int i = 0; i < word.length(); i++) {
             char letter = word.charAt(i);
-            List.addLast(letter);
+            aList.addLast(letter);
         }
-        return List;
+        return aList;
     }
     public boolean isPalindrome(String word) {
         if (word.length() == 1 || word.length() == 0) {

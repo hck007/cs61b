@@ -1,8 +1,6 @@
 import org.junit.Test;
-
-import java.util.Comparator;
-
 import static org.junit.Assert.*;
+
 public class TestPalindrome {
     // You must use this palindrome, and not instantiate
     // new Palindromes, or the autograder might be upset.
@@ -30,6 +28,6 @@ public class TestPalindrome {
         CharacterComparator cc = new OffByOne();
         boolean actual1 = palindrome.isPalindrome("flake", cc);
         assertTrue(actual1);
-
     }
+
 }
