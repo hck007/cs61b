@@ -4,7 +4,7 @@ import java.util.Iterator;
 
 
 
-public class ArrayRingBuffer<T> extends AbstractBoundedQueue<T> implements Iterable<T> {
+public class ArrayRingBuffer<T> extends AbstractBoundedQueue<T> {
     /* Index for the next dequeue or peek. */
     private int first;
     /* Index for the next enqueue. */
@@ -25,16 +25,6 @@ public class ArrayRingBuffer<T> extends AbstractBoundedQueue<T> implements Itera
         rb = (T[]) new Object[capacity];
     }
 
-    @Override
-    public int capacity() {
-        return rb.length;
-    }
-
-    @Override
-    public int fillCount() {
-        return fillCount;
-    }
-
     /**
      * Adds x to the end of the ring buffer. If there is no room, then
      * throw new RuntimeException("Ring buffer overflow").
@@ -43,10 +33,10 @@ public class ArrayRingBuffer<T> extends AbstractBoundedQueue<T> implements Itera
     public void enqueue(T x) {
 
         fillCount++;
-        if (fillCount > this.capacity()) {
+        if (fillCount > rb.length) {
             throw new RuntimeException();
         }
-        last = Math.floorMod(fillCount + first - 1, this.capacity());
+        last = Math.floorMod(fillCount + first - 1, rb.length);
         rb[last] = x;
 
     }
@@ -63,7 +53,7 @@ public class ArrayRingBuffer<T> extends AbstractBoundedQueue<T> implements Itera
             throw new RuntimeException();
         }
         T returnItem = rb[first];
-        first = Math.floorMod(first + 1, this.capacity());
+        first = Math.floorMod(first + 1, rb.length);
         return returnItem;
 
     }
@@ -121,7 +111,7 @@ public class ArrayRingBuffer<T> extends AbstractBoundedQueue<T> implements Itera
             count++;
             T itemReturned = rb[pos];
             pos++;
-            pos = Math.floorMod(pos, capacity());
+            pos = Math.floorMod(pos, rb.length);
             return itemReturned;
         }
 

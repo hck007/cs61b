@@ -21,16 +21,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/synthesizer/ArrayRingBuffer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+            <state relative-caret-position="1921">
+              <caret line="113" column="48" lean-forward="true" selection-start-line="113" selection-start-column="48" selection-end-line="113" selection-end-column="48" />
               <folding>
-                <element signature="e#643#644#0" expanded="true" />
-                <element signature="e#675#676#0" expanded="true" />
-                <element signature="e#719#720#0" expanded="true" />
-                <element signature="e#751#752#0" expanded="true" />
                 <element signature="e#2746#2747#0" expanded="true" />
                 <element signature="e#2794#2795#0" expanded="true" />
                 <element signature="e#3036#3037#0" expanded="true" />
@@ -43,26 +39,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/synthesizer/AbstractBoundedQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="43" column="29" lean-forward="true" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
+            <state relative-caret-position="153">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/synthesizer/TestArrayRingBuffer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="-1183">
               <caret line="20" selection-start-line="20" selection-end-line="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/synthesizer/TestGuitarString.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -127,7 +114,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestArrayRingBuffer.TestIterator">
+  <component name="RunManager" selected="JUnit.TestArrayRingBuffer.TestEquals">
     <configuration name="TestArrayRingBuffer.someTests" type="AndroidJUnit" temporary="true" nameIsGenerated="true">
       <module name="hw1" />
       <extension name="coverage">
@@ -139,6 +126,22 @@
       <option name="PACKAGE_NAME" value="synthesizer" />
       <option name="MAIN_CLASS_NAME" value="synthesizer.TestArrayRingBuffer" />
       <option name="METHOD_NAME" value="someTests" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestArrayRingBuffer.TestEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hw1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="synthesizer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="synthesizer" />
+      <option name="MAIN_CLASS_NAME" value="synthesizer.TestArrayRingBuffer" />
+      <option name="METHOD_NAME" value="TestEquals" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -193,6 +196,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestArrayRingBuffer.TestEquals" />
         <item itemvalue="JUnit.TestArrayRingBuffer.TestIterator" />
         <item itemvalue="Android JUnit.TestArrayRingBuffer.someTests" />
         <item itemvalue="JUnit.TestArrayRingBuffer.someTests" />
@@ -214,39 +218,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestArrayRingBuffer_TestIterator - 2019.06.25 at 15h 11m 42s.xml">
-      <configuration name="TestArrayRingBuffer.TestIterator" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestGuitarString - 2019.06.25 at 15h 12m 00s.xml">
-      <configuration name="TestGuitarString" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestGuitarString - 2019.06.25 at 15h 12m 24s.xml">
-      <configuration name="TestGuitarString" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestArrayRingBuffer_someTests - 2019.06.25 at 15h 14m 43s.xml">
-      <configuration name="TestArrayRingBuffer.someTests" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="TestArrayRingBuffer_someTests - 2019.06.25 at 15h 16m 17s.xml">
-      <configuration name="TestArrayRingBuffer.someTests" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="TestArrayRingBuffer_someTests - 2019.06.25 at 15h 17m 13s.xml">
-      <configuration name="TestArrayRingBuffer.someTests" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="TestArrayRingBuffer_someTests - 2019.06.25 at 15h 20m 51s.xml">
-      <configuration name="TestArrayRingBuffer.someTests" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="TestArrayRingBuffer_someTests - 2019.06.25 at 15h 21m 38s.xml">
-      <configuration name="TestArrayRingBuffer.someTests" configurationId="AndroidJUnit" />
-    </history-entry>
     <history-entry file="TestArrayRingBuffer_someTests - 2019.06.25 at 15h 23m 03s.xml">
       <configuration name="TestArrayRingBuffer.someTests" configurationId="AndroidJUnit" />
     </history-entry>
     <history-entry file="TestArrayRingBuffer_someTests - 2019.06.25 at 15h 26m 32s.xml">
       <configuration name="TestArrayRingBuffer.someTests" configurationId="AndroidJUnit" />
     </history-entry>
+    <history-entry file="TestArrayRingBuffer_someTests - 2019.06.25 at 15h 29m 07s.xml">
+      <configuration name="TestArrayRingBuffer.someTests" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="TestArrayRingBuffer_TestIterator - 2019.06.25 at 15h 29m 16s.xml">
+      <configuration name="TestArrayRingBuffer.TestIterator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestArrayRingBuffer_TestEquals - 2019.06.25 at 15h 36m 15s.xml">
+      <configuration name="TestArrayRingBuffer.TestEquals" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestArrayRingBuffer_TestIterator - 2019.06.25 at 15h 36m 25s.xml">
+      <configuration name="TestArrayRingBuffer.TestIterator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestArrayRingBuffer_someTests - 2019.06.25 at 15h 38m 03s.xml">
+      <configuration name="TestArrayRingBuffer.someTests" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="TestArrayRingBuffer_someTests - 2019.06.25 at 15h 38m 54s.xml">
+      <configuration name="TestArrayRingBuffer.someTests" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="TestArrayRingBuffer_TestIterator - 2019.06.25 at 15h 39m 03s.xml">
+      <configuration name="TestArrayRingBuffer.TestIterator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestArrayRingBuffer_TestEquals - 2019.06.25 at 15h 39m 08s.xml">
+      <configuration name="TestArrayRingBuffer.TestEquals" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1293" height="693" extended-state="6" />
+    <frame x="-7" y="-7" width="1293" height="693" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
@@ -306,13 +310,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/synthesizer/TestGuitarString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../skeleton-sp19/library-sp19/javalib/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -320,34 +317,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/synthesizer/AbstractBoundedQueue.java">
+    <entry file="file://$PROJECT_DIR$/synthesizer/TestGuitarString.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="43" column="29" lean-forward="true" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
+        <state relative-caret-position="170">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/synthesizer/TestArrayRingBuffer.java">
+    <entry file="jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/lang/Math.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="168">
+          <caret line="1160" selection-start-line="1160" selection-end-line="1160" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/synthesizer/AbstractBoundedQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/synthesizer/ArrayRingBuffer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        <state relative-caret-position="1921">
+          <caret line="113" column="48" lean-forward="true" selection-start-line="113" selection-start-column="48" selection-end-line="113" selection-end-column="48" />
           <folding>
-            <element signature="e#643#644#0" expanded="true" />
-            <element signature="e#675#676#0" expanded="true" />
-            <element signature="e#719#720#0" expanded="true" />
-            <element signature="e#751#752#0" expanded="true" />
             <element signature="e#2746#2747#0" expanded="true" />
             <element signature="e#2794#2795#0" expanded="true" />
             <element signature="e#3036#3037#0" expanded="true" />
             <element signature="e#3088#3089#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/synthesizer/TestArrayRingBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1183">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
