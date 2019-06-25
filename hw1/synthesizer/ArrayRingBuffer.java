@@ -3,10 +3,7 @@ package synthesizer;
 import java.util.Iterator;
 
 
-
-
-
-public class ArrayRingBuffer<T> implements BoundedQueue<T>  {
+public class ArrayRingBuffer<T> extends AbstractBoundedQueue<T>  {
 
     /* Index for the next dequeue or peek. */
 
@@ -214,7 +211,7 @@ public class ArrayRingBuffer<T> implements BoundedQueue<T>  {
 
 
 
-        public ArrayRingBufferIterator() {
+        ArrayRingBufferIterator() {
 
             pos = first;
 
