@@ -1,11 +1,7 @@
 package es.datastructur.synthesizer;
 import java.util.Iterator;
 
-//TODO: Make sure to that this class and all of its methods are public
-//TODO: Make sure to add the override tag for all overridden methods
-//TODO: Make sure to make this class implement BoundedQueue<T>
-
-public class ArrayRingBuffer<T> implements BoundedQueue<T>  {
+public class ArrayRingBuffer<T> implements BoundedQueue<T> {
     /* Index for the next dequeue or peek. */
     private int first;
     /* Index for the next enqueue. */
@@ -19,8 +15,7 @@ public class ArrayRingBuffer<T> implements BoundedQueue<T>  {
      * Create a new ArrayRingBuffer with the given capacity.
      */
     public ArrayRingBuffer(int capacity) {
-        // TODO: Create new array with capacity elements.
-        //       first, last, and fillCount should all be set to 0.
+
         first = 0;
         last = 0;
         fillCount = 0;
@@ -43,9 +38,7 @@ public class ArrayRingBuffer<T> implements BoundedQueue<T>  {
      */
     @Override
     public void enqueue(T x) {
-        // TODO: Enqueue the item. Don't forget to increase fillCount and update
-        //       last.
-        fillCount++;
+
         if (fillCount > this.capacity()) {
             throw new RuntimeException();
         }
@@ -60,8 +53,7 @@ public class ArrayRingBuffer<T> implements BoundedQueue<T>  {
      */
     @Override
     public T dequeue() {
-        // TODO: Dequeue the first item. Don't forget to decrease fillCount and
-        //       update first.
+
         fillCount -= 1;
         if (fillCount < 0) {
             throw new RuntimeException();
@@ -78,10 +70,10 @@ public class ArrayRingBuffer<T> implements BoundedQueue<T>  {
      */
     @Override
     public T peek() {
-        // TODO: Return the first item. None of your instance variables should
-        //       change.
+
         return rb[first];
     }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {
@@ -106,6 +98,7 @@ public class ArrayRingBuffer<T> implements BoundedQueue<T>  {
         }
         return true;
     }
+
     /**
      * implement Iterator class
      */
@@ -135,9 +128,5 @@ public class ArrayRingBuffer<T> implements BoundedQueue<T>  {
     public Iterator<T> iterator() {
         return new ArrayRingBufferIterator();
     }
-
-    // TODO: When you get to part 4, implement the needed code to support
-    //       iteration and equals.
-
 }
-    // TODO: Remove all comments that say TODO when you're done.
+
