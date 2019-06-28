@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15400762-de73-4740-af6c-89423cec9037" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/es/datastructur/synthesizer/ArrayRingBuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/es/datastructur/synthesizer/ArrayRingBuffer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/es/datastructur/synthesizer/GuitarString.java" beforeDir="false" afterPath="$PROJECT_DIR$/es/datastructur/synthesizer/GuitarString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/es/datastructur/synthesizer/TestArrayRingBuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/es/datastructur/synthesizer/TestArrayRingBuffer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/es/datastructur/synthesizer/TestGuitarString.java" beforeDir="false" afterPath="$PROJECT_DIR$/es/datastructur/synthesizer/TestGuitarString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab2/Intlist/IntList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab2/Intlist/IntList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab2setup/DogTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab2setup/DogTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab3/Arithmetic/ArithmeticTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/Arithmetic/ArithmeticTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab5/creatures/Plip.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/creatures/Plip.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab5/creatures/TestPlip.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/creatures/TestPlip.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab5/huglife/HugLife.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/huglife/HugLife.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab6/UnionFind.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab6/UnionFind.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj1a/LinkedListDequeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1a/LinkedListDequeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj1b/TestOffByOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1b/TestOffByOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj1b/TestPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1b/TestPalindrome.java" afterDir="false" />
+    <list default="true" id="dccde3f3-e250-44a1-bc78-95bcf3e3dc0b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/hw1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj1a/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1a/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj1b/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj1b/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1b/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,39 +17,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/es/datastructur/synthesizer/BoundedQueue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/es/datastructur/synthesizer/ArrayRingBuffer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1315">
-              <caret line="131" selection-start-line="131" selection-end-line="131" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/es/datastructur/synthesizer/GuitarString.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="52" selection-start-line="52" selection-end-line="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -65,8 +28,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/es/datastructur/synthesizer/GuitarString.java" />
-        <option value="$PROJECT_DIR$/es/datastructur/synthesizer/ArrayRingBuffer.java" />
+        <option value="$PROJECT_DIR$/synthesizer/AbstractBoundedQueue.java" />
+        <option value="$PROJECT_DIR$/synthesizer/ArrayRingBuffer.java" />
+        <option value="$PROJECT_DIR$/synthesizer/GuitarString.java" />
       </list>
     </option>
   </component>
@@ -83,8 +47,8 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -102,7 +66,86 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.TestGuitarString.testPluckTheAString">
+    <configuration name="TestArrayRingBuffer.someTests" type="AndroidJUnit" temporary="true" nameIsGenerated="true">
+      <module name="hw1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="synthesizer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="synthesizer" />
+      <option name="MAIN_CLASS_NAME" value="synthesizer.TestArrayRingBuffer" />
+      <option name="METHOD_NAME" value="someTests" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestArrayRingBuffer.TestEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hw1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="synthesizer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="synthesizer" />
+      <option name="MAIN_CLASS_NAME" value="synthesizer.TestArrayRingBuffer" />
+      <option name="METHOD_NAME" value="TestEquals" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestArrayRingBuffer.TestIterator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hw1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="synthesizer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="synthesizer" />
+      <option name="MAIN_CLASS_NAME" value="synthesizer.TestArrayRingBuffer" />
+      <option name="METHOD_NAME" value="TestIterator" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestGuitarString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hw1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="synthesizer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="synthesizer" />
+      <option name="MAIN_CLASS_NAME" value="synthesizer.TestGuitarString" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestGuitarString.testPluckTheAString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hw1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="synthesizer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="synthesizer" />
+      <option name="MAIN_CLASS_NAME" value="synthesizer.TestGuitarString" />
+      <option name="METHOD_NAME" value="testPluckTheAString" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
       <module name="hw1" />
       <option name="VM_PARAMETERS" />
@@ -150,73 +193,131 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestGuitarString.testPluckTheAString" />
+        <item itemvalue="JUnit.TestArrayRingBuffer.TestEquals" />
+        <item itemvalue="Android JUnit.TestArrayRingBuffer.someTests" />
+        <item itemvalue="JUnit.TestArrayRingBuffer.TestIterator" />
+        <item itemvalue="JUnit.TestGuitarString" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="15400762-de73-4740-af6c-89423cec9037" name="Default Changelist" comment="" />
-      <created>1561435771223</created>
+      <changelist id="dccde3f3-e250-44a1-bc78-95bcf3e3dc0b" name="Default Changelist" comment="" />
+      <created>1561445266727</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1561435771223</updated>
+      <updated>1561445266727</updated>
     </task>
     <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="TestArrayRingBuffer_TestIterator - 2019.06.25 at 15h 36m 25s.xml">
+      <configuration name="TestArrayRingBuffer.TestIterator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestArrayRingBuffer_someTests - 2019.06.25 at 15h 38m 03s.xml">
+      <configuration name="TestArrayRingBuffer.someTests" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="TestArrayRingBuffer_someTests - 2019.06.25 at 15h 38m 54s.xml">
+      <configuration name="TestArrayRingBuffer.someTests" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="TestArrayRingBuffer_TestIterator - 2019.06.25 at 15h 39m 03s.xml">
+      <configuration name="TestArrayRingBuffer.TestIterator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestArrayRingBuffer_TestEquals - 2019.06.25 at 15h 39m 08s.xml">
+      <configuration name="TestArrayRingBuffer.TestEquals" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGuitarString - 2019.06.25 at 15h 42m 27s.xml">
+      <configuration name="TestGuitarString" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestArrayRingBuffer_TestIterator - 2019.06.25 at 15h 43m 03s.xml">
+      <configuration name="TestArrayRingBuffer.TestIterator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestArrayRingBuffer_someTests - 2019.06.25 at 15h 46m 46s.xml">
+      <configuration name="TestArrayRingBuffer.someTests" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="TestArrayRingBuffer_TestEquals - 2019.06.25 at 15h 46m 55s.xml">
+      <configuration name="TestArrayRingBuffer.TestEquals" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGuitarString_testPluckTheAString - 2019.06.25 at 15h 47m 20s.xml">
+      <configuration name="TestGuitarString.testPluckTheAString" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1293" height="693" extended-state="6" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2497979" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25383994" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Style Checker" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32978722" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39893618" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Maven" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Style Checker" order="8" weight="0.32978722" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/es/datastructur/synthesizer/BoundedQueue.java">
+    <entry file="jar://$PROJECT_DIR$/../../skeleton-sp19/library-sp19/javalib/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        <state relative-caret-position="121">
+          <caret line="203" selection-start-line="203" selection-end-line="203" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/es/datastructur/synthesizer/GuitarString.java">
+    <entry file="jar://$PROJECT_DIR$/../../skeleton-sp19/library-sp19/javalib/junit-4.12.jar!/org/junit/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        <state relative-caret-position="224">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#594#595#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/es/datastructur/synthesizer/ArrayRingBuffer.java">
+    <entry file="jar://$PROJECT_DIR$/../../skeleton-sp19/library-sp19/javalib/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1315">
-          <caret line="131" selection-start-line="131" selection-end-line="131" />
+        <state relative-caret-position="221">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/lang/Math.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="1160" selection-start-line="1160" selection-end-line="1160" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/synthesizer/BoundedQueue.java" />
+    <entry file="file://$PROJECT_DIR$/synthesizer/TestArrayRingBuffer.java" />
+    <entry file="file://$PROJECT_DIR$/synthesizer/AbstractBoundedQueue.java" />
+    <entry file="file://$PROJECT_DIR$/synthesizer/GuitarString.java" />
+    <entry file="file://$PROJECT_DIR$/synthesizer/TestGuitarString.java" />
+    <entry file="file://$PROJECT_DIR$/synthesizer/ArrayRingBuffer.java" />
   </component>
   <component name="masterDetails">
     <states>
