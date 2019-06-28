@@ -62,6 +62,9 @@ public class Percolation {
 
     // is the site (row, col) open?
     public boolean isOpen(int row, int col) {
+        if (row < 0 || col < 0 || row > size - 1 || col > size - 1) {
+            throw new IndexOutOfBoundsException();
+        }
         int id = xyTo1D(row, col);
         boolean status = siteStatus[id];
         return status;
@@ -69,6 +72,9 @@ public class Percolation {
 
     // is the site (row, col) full?
     public boolean isFull(int row, int col) {
+        if (row < 0 || col < 0 || row > size - 1 || col > size - 1) {
+            throw new IndexOutOfBoundsException();
+        }
         return top.connected(topNode, xyTo1D(row, col));
     }
 
