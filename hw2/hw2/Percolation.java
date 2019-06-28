@@ -16,7 +16,7 @@ public class Percolation {
         if (N <= 0) {
             throw new IllegalArgumentException();
         }
-        topNode = -1;
+        topNode = N * N + 1;
         bottomNode = N * N;
         top = new WeightedQuickUnionUF(N * N + 2); //create top disjoint set
         bottom = new WeightedQuickUnionUF(N + 1); //create bottom disjoint set
