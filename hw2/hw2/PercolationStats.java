@@ -16,7 +16,7 @@ public class PercolationStats {
             while (!p.percolates()) {
                 int row = StdRandom.uniform(N);
                 int col = StdRandom.uniform(N);
-                if (p.isOpen(row, col)) {
+                if (!p.isOpen(row, col)) {
                     p.open(row, col);
                 }
             }

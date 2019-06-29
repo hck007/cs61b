@@ -42,7 +42,8 @@ public class Percolation {
         if (row == 0) {
             top.union(topNode, xyTo1D(row, col));
             bottom.union(topNode, xyTo1D(row, col));
-        } else if (row == size - 1) {
+        }
+        if (row == size - 1) {
             top.union(bottomNode, xyTo1D(row, col));
         }
         //connect other adjacent sites
@@ -102,12 +103,8 @@ public class Percolation {
 
     // use for unit testing (not required, but keep this here for the autograder)
     public static void main(String[] args) {
-        Percolation p = new Percolation(5);
-        p.open(0, 4);
-        p.open(1, 4);
-        p.open(2, 4);
-        p.open(3, 4);
-        p.open(4, 4);
+        Percolation p = new Percolation(1);
+        p.open(0,0);
         System.out.println(p.percolates());
     }
 
