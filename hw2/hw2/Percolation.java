@@ -104,7 +104,7 @@ public class Percolation {
     // use for unit testing (not required, but keep this here for the autograder)
     public static void main(String[] args) {
         Percolation p = new Percolation(1);
-        p.open(0,0);
+        p.open(0, 0);
         System.out.println(p.percolates());
     }
 
