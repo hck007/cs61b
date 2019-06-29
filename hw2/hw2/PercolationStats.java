@@ -48,9 +48,4 @@ public class PercolationStats {
         double ans = mean() + ((1.96 * stddev()) / Math.sqrt(numTrials));
         return ans;
     }
-    public static void main(String[] args) {
-        PercolationFactory pf = new PercolationFactory();
-        PercolationStats ps = new PercolationStats(5, 3, pf);
-        System.out.print(ps.stddev());
-    }
 }
