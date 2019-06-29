@@ -1,24 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31ca01a6-8878-4fb9-aafd-7d21662d3215" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../hw1/es/datastructur/synthesizer/ArrayRingBuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hw1/es/datastructur/synthesizer/ArrayRingBuffer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw1/es/datastructur/synthesizer/GuitarString.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hw1/es/datastructur/synthesizer/GuitarString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw1/es/datastructur/synthesizer/TestArrayRingBuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hw1/es/datastructur/synthesizer/TestArrayRingBuffer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw1/es/datastructur/synthesizer/TestGuitarString.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hw1/es/datastructur/synthesizer/TestGuitarString.java" afterDir="false" />
+    <list default="true" id="b0457f5e-30a0-477f-8e7b-07fb8afa9075" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw2/InteractivePercolationVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/hw2/InteractivePercolationVisualizer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hw2/Percolation.java" beforeDir="false" afterPath="$PROJECT_DIR$/hw2/Percolation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw2/PercolationStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/hw2/PercolationStats.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw2/PercolationVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/hw2/PercolationVisualizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab2/Intlist/IntList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab2/Intlist/IntList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab2setup/DogTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab2setup/DogTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab3/Arithmetic/ArithmeticTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/Arithmetic/ArithmeticTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab5/creatures/Plip.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/creatures/Plip.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab5/creatures/TestPlip.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/creatures/TestPlip.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab5/huglife/HugLife.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/huglife/HugLife.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab6/UnionFind.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab6/UnionFind.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj1a/LinkedListDequeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1a/LinkedListDequeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj1b/TestOffByOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1b/TestOffByOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj1b/TestPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1b/TestPalindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw2/hw2/InteractivePercolationVisualizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/hw2/InteractivePercolationVisualizer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw2/hw2/Percolation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/hw2/Percolation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw2/hw2/PercolationStats.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/hw2/PercolationStats.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hw2/hw2/PercolationVisualizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/hw2/hw2/PercolationVisualizer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj1a/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1a/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj1b/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj1b/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1b/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,40 +26,24 @@
     <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hw2/Percolation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="76" column="5" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
+            <state relative-caret-position="414">
+              <caret line="58" column="12" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
               <folding>
-                <element signature="e#2458#2459#0" expanded="true" />
-                <element signature="e#2556#2557#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hw2/PercolationStats.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="39" column="19" lean-forward="true" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#2912#2913#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hw2/PercolationVisualizer.java">
+        <entry file="file://$PROJECT_DIR$/hw2/InteractivePercolationVisualizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="70" column="69" lean-forward="true" selection-start-line="70" selection-start-column="69" selection-end-line="70" selection-end-column="69" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="312">
+              <caret line="56" selection-start-line="56" selection-end-line="56" />
             </state>
           </provider>
         </entry>
@@ -78,9 +56,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/hw2/Percolation.java" />
         <option value="$PROJECT_DIR$/hw2/PercolationStats.java" />
-        <option value="$PROJECT_DIR$/hw2/PercolationVisualizer.java" />
+        <option value="$PROJECT_DIR$/hw2/InteractivePercolationVisualizer.java" />
+        <option value="$PROJECT_DIR$/hw2/Percolation.java" />
       </list>
     </option>
   </component>
@@ -96,6 +74,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -112,8 +92,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -132,10 +110,9 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="PercolationVisualizer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hw2.PercolationVisualizer" />
+    <configuration name="InteractivePercolationVisualizer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hw2.InteractivePercolationVisualizer" />
       <module name="hw2" />
-      <option name="PROGRAM_PARAMETERS" value="input20.txt" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="hw2.*" />
@@ -148,7 +125,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PercolationVisualizer" />
+        <item itemvalue="Application.InteractivePercolationVisualizer" />
       </list>
     </recent_temporary>
   </component>
@@ -157,11 +134,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="31ca01a6-8878-4fb9-aafd-7d21662d3215" name="Default Changelist" comment="" />
-      <created>1561703583481</created>
+      <changelist id="b0457f5e-30a0-477f-8e7b-07fb8afa9075" name="Default Changelist" comment="" />
+      <created>1561731267234</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1561703583481</updated>
+      <updated>1561731267234</updated>
     </task>
     <servers />
   </component>
@@ -169,74 +146,81 @@
     <frame x="-7" y="-7" width="1293" height="693" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2497979" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25383994" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Style Checker" weight="0.32978722" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32978722" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39893618" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Style Checker" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32978722" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hw2/PercolationFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="34" lean-forward="true" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
-          <folding>
-            <element signature="e#83#84#0" expanded="true" />
-            <element signature="e#124#125#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hw2/Percolation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="76" column="5" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
-          <folding>
-            <element signature="e#2458#2459#0" expanded="true" />
-            <element signature="e#2556#2557#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hw2/PercolationStats.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="39" column="19" lean-forward="true" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+        <state relative-caret-position="278">
+          <caret line="33" column="48" lean-forward="true" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw2/PercolationFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="33" lean-forward="true" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../skeleton-sp19/library-sp19/javalib/algs4.jar!/edu/princeton/cs/algs4/StdDraw.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="239" selection-start-line="239" selection-end-line="239" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#7795#7796#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hw2/PercolationVisualizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="70" column="69" lean-forward="true" selection-start-line="70" selection-start-column="69" selection-end-line="70" selection-end-column="69" />
+        <state relative-caret-position="-34">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw2/Percolation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="58" column="12" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#2912#2913#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw2/InteractivePercolationVisualizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
         </state>
       </provider>
     </entry>

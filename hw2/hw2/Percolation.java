@@ -1,4 +1,3 @@
-
 package hw2;
 import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 
@@ -19,7 +18,7 @@ public class Percolation {
         topNode = N * N + 1;
         bottomNode = N * N;
         top = new WeightedQuickUnionUF(N * N + 2); //create top disjoint set
-        bottom = new WeightedQuickUnionUF(N + 1); //create bottom disjoint set
+        bottom = new WeightedQuickUnionUF(N * N + 2);
         openSites = 0;
         size = N;
         siteStatus = new boolean[N * N];
@@ -39,25 +38,30 @@ public class Percolation {
             siteStatus[xyTo1D(row, col)] = true;
             openSites++;
         }
-        //connect a first-row site to the virtual topNode
+        //connect a first-row or last-row site to the virtual topNode
         if (row == 0) {
             top.union(topNode, xyTo1D(row, col));
+            bottom.union(topNode, xyTo1D(row, col));
+        } else if (row == size - 1) {
+            top.union(bottomNode, xyTo1D(row, col));
         }
-        //connect a last-row site to the virtual bottomNode
-        if (row == size - 1) {
-            bottom.union(bottomNode, xyTo1D(row, col));
-        }
-        //if an open site is adjacent to another open site, connect them
-        if (isOpen(row, col) == isOpen(row - 1, col)) {
+        //connect other adjacent sites
+        if (row > 0 && row <= size - 1 && isOpen(row - 1, col)) {
             top.union(xyTo1D(row, col), xyTo1D(row - 1, col));
-        } else if (isOpen(row, col) == isOpen(row + 1, col)) {
-            top.union(xyTo1D(row, col), xyTo1D(row + 1, col));
-        } else if (isOpen(row, col) == isOpen(row, col - 1)) {
-            top.union(xyTo1D(row, col), xyTo1D(row, col - 1));
-        } else if (isOpen(row, col) == isOpen(row, col + 1)) {
-            top.union(xyTo1D(row, col), xyTo1D(row, col + 1));
+            bottom.union(xyTo1D(row, col), xyTo1D(row - 1, col));
         }
-
+        if (row >= 0 && row < size - 1 && isOpen(row + 1, col)) {
+            top.union(xyTo1D(row, col), xyTo1D(row + 1, col));
+            bottom.union(xyTo1D(row, col), xyTo1D(row + 1, col));
+        }
+        if (col > 0 && col <= size - 1 && isOpen(row, col - 1)) {
+            top.union(xyTo1D(row, col), xyTo1D(row, col - 1));
+            bottom.union(xyTo1D(row, col), xyTo1D(row, col - 1));
+        }
+        if (col >= 0 && col < size - 1 && isOpen(row, col + 1)) {
+            top.union(xyTo1D(row, col), xyTo1D(row, col + 1));
+            bottom.union(xyTo1D(row, col), xyTo1D(row, col + 1));
+        }
     }
 
     // is the site (row, col) open?
@@ -75,7 +79,7 @@ public class Percolation {
         if (row < 0 || col < 0 || row > size - 1 || col > size - 1) {
             throw new IndexOutOfBoundsException();
         }
-        return top.connected(topNode, xyTo1D(row, col));
+        return bottom.connected(topNode, xyTo1D(row, col));
     }
 
     // number of open sites
@@ -98,7 +102,13 @@ public class Percolation {
 
     // use for unit testing (not required, but keep this here for the autograder)
     public static void main(String[] args) {
-
+        Percolation p = new Percolation(5);
+        p.open(0, 4);
+        p.open(1, 4);
+        p.open(2, 4);
+        p.open(3, 4);
+        p.open(4, 4);
+        System.out.println(p.percolates());
     }
 
 
