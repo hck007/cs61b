@@ -167,8 +167,8 @@ public class ArrayHeap<T> implements ExtrinsicPQ<T> {
         T itemReturned = contents[1].myItem;
         swap(1, size);
         contents[size] = null;
-        sink(1);
         size--;
+        sink(1);
         return itemReturned;
     }
 
@@ -203,7 +203,7 @@ public class ArrayHeap<T> implements ExtrinsicPQ<T> {
         if (min(index, index / 2) == index) {
             swim(index);
         }
-        if (min(index, 2 * index) == 2 * index || min(index, 2 * index + 1) == 2* index + 1) {
+        if (min(index, 2 * index) == 2 * index || min(index, 2 * index + 1) == 2 * index + 1) {
             sink(index);
         }
     }
