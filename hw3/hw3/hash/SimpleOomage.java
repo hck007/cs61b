@@ -36,7 +36,7 @@ public class SimpleOomage implements Oomage {
             int r1 = red / 5;
             int g1 = green / 5;
             int b1 = blue / 5;
-            double intRep = r1 * Math.pow(29, 2) + g1 * Math.pow(29, 1) + b1 * Math.pow(29, 0);
+            double intRep = r1 * Math.pow(123, 2) + g1 * Math.pow(123, 1) + b1 * Math.pow(123, 0);
             return (int) intRep;
         }
     }
