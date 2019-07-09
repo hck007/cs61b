@@ -1,7 +1,7 @@
 package hw4.puzzle;
 import edu.princeton.cs.algs4.MinPQ;
-import edu.princeton.cs.algs4.Stack;
-
+import java.util.Queue;
+import java.util.ArrayDeque;
 
 
 public class Solver {
@@ -35,9 +35,9 @@ public class Solver {
     }
 
     public Iterable<WorldState> solution() {
-        Stack<WorldState> solution = new Stack<>();
+        Queue<WorldState> solution = new ArrayDeque<>();
         while (goal != null) {
-            solution.push(goal.current);
+            solution.add(goal.current);
             goal = goal.prev;
         }
         return solution;

@@ -25,7 +25,7 @@ public class Board implements WorldState{
 
     public int tileAt(int i, int j) {
         if (i < 0 || i > N - 1 || j < 0 || j > N - 1) {
-            throw new IllegalArgumentException();
+            throw new IndexOutOfBoundsException();
         }
         return board[i][j];
     }
@@ -103,10 +103,7 @@ public class Board implements WorldState{
         if (this == y) {
             return true;
         }
-        if (this.getClass() != y.getClass()) {
-            return false;
-        }
-        if (y == null) {
+        if (y == null || this.getClass() != y.getClass()) {
             return false;
         }
         Board other = (Board) y;
