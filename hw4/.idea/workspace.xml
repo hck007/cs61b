@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="595a1e40-dfc6-4abc-b9aa-b2311552877b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../hw1/synthesizer/TestArrayRingBuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hw1/synthesizer/TestArrayRingBuffer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw1/synthesizer/TestGuitarString.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hw1/synthesizer/TestGuitarString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw4/puzzle/AlphabetEasyPuzzleSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/hw4/puzzle/AlphabetEasyPuzzleSolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw4/puzzle/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/hw4/puzzle/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw4/puzzle/EightPuzzleSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/hw4/puzzle/EightPuzzleSolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw4/puzzle/TestSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/hw4/puzzle/TestSolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw4/puzzle/WordPuzzleSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/hw4/puzzle/WordPuzzleSolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab10/ArrayHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab10/ArrayHeap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab11/lab11/graphs/MazeAStarPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab11/lab11/graphs/MazeAStarPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab11/lab11/graphs/MazeBreadthFirstPaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab11/lab11/graphs/MazeBreadthFirstPaths.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab11/lab11/graphs/MazeCycles.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab11/lab11/graphs/MazeCycles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab11/lab11/graphs/MazeDepthFirstPaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab11/lab11/graphs/MazeDepthFirstPaths.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab11/lab11/graphs/maze.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../lab11/lab11/graphs/maze.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab9/lab9/BSTMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab9/lab9/BSTMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab9/lab9/MyHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab9/lab9/MyHashMap.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hw4/puzzle/Solver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="347">
+              <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hw4/puzzle/searchNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hw4/puzzle/TestSolver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-758">
+              <caret line="85" selection-start-line="85" selection-end-line="85" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hw4/puzzle/Board.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="90" column="9" lean-forward="true" selection-start-line="90" selection-start-column="9" selection-end-line="90" selection-end-column="9" />
+              <folding>
+                <element signature="e#671#672#0" expanded="true" />
+                <element signature="e#695#696#0" expanded="true" />
+                <element signature="e#3263#3264#0" expanded="true" />
+                <element signature="e#3297#3298#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/hw4/puzzle/searchNode.java" />
+        <option value="$PROJECT_DIR$/hw4/puzzle/TestSearchNode.java" />
+        <option value="$PROJECT_DIR$/hw4/puzzle/AlphabetEasyPuzzleSolver.java" />
+        <option value="$PROJECT_DIR$/hw4/puzzle/TestBoard.java" />
+        <option value="$PROJECT_DIR$/hw4/puzzle/Solver.java" />
+        <option value="$PROJECT_DIR$/hw4/puzzle/WordPuzzleSolver.java" />
+        <option value="$PROJECT_DIR$/hw4/puzzle/EightPuzzleSolver.java" />
+        <option value="$PROJECT_DIR$/hw4/puzzle/TestSolver.java" />
+        <option value="$PROJECT_DIR$/hw4/puzzle/Board.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="20" />
+    <option name="y" value="40" />
+    <option name="width" value="2520" />
+    <option name="height" value="1280" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="hw4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hw4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hw4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hw4" type="462c0819:PsiDirectoryNode" />
+              <item name="puzzle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hw4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hw4" type="462c0819:PsiDirectoryNode" />
+              <item name="input" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.TestSolver.testVariousPuzzles">
+    <configuration name="CommonBugDetector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hw4.puzzle.CommonBugDetector" />
+      <module name="hw4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hw4.puzzle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSolver.test2x2BoardPuzzles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hw4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hw4.puzzle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hw4.puzzle" />
+      <option name="MAIN_CLASS_NAME" value="hw4.puzzle.TestSolver" />
+      <option name="METHOD_NAME" value="test2x2BoardPuzzles" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSolver.test3x3BoardPuzzles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hw4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hw4.puzzle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hw4.puzzle" />
+      <option name="MAIN_CLASS_NAME" value="hw4.puzzle.TestSolver" />
+      <option name="METHOD_NAME" value="test3x3BoardPuzzles" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSolver.test4x4BoardPuzzles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hw4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hw4.puzzle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hw4.puzzle" />
+      <option name="MAIN_CLASS_NAME" value="hw4.puzzle.TestSolver" />
+      <option name="METHOD_NAME" value="test4x4BoardPuzzles" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSolver.testVariousPuzzles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hw4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hw4.puzzle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hw4.puzzle" />
+      <option name="MAIN_CLASS_NAME" value="hw4.puzzle.TestSolver" />
+      <option name="METHOD_NAME" value="testVariousPuzzles" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.TestSolver.test2x2BoardPuzzles" />
+      <item itemvalue="Application.CommonBugDetector" />
+      <item itemvalue="JUnit.TestSolver.test3x3BoardPuzzles" />
+      <item itemvalue="JUnit.TestSolver.test4x4BoardPuzzles" />
+      <item itemvalue="JUnit.TestSolver.testVariousPuzzles" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestSolver.testVariousPuzzles" />
+        <item itemvalue="JUnit.TestSolver.test2x2BoardPuzzles" />
+        <item itemvalue="JUnit.TestSolver.test4x4BoardPuzzles" />
+        <item itemvalue="JUnit.TestSolver.test3x3BoardPuzzles" />
+        <item itemvalue="Application.CommonBugDetector" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="595a1e40-dfc6-4abc-b9aa-b2311552877b" name="Default Changelist" comment="" />
+      <created>1562567702504</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1562567702504</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="TestSolver_test2x2BoardPuzzles - 2019.07.09 at 11h 08m 58s.xml">
+      <configuration name="TestSolver.test2x2BoardPuzzles" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSolver_test2x2BoardPuzzles - 2019.07.09 at 11h 11m 08s.xml">
+      <configuration name="TestSolver.test2x2BoardPuzzles" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSolver_test3x3BoardPuzzles - 2019.07.09 at 11h 11m 18s.xml">
+      <configuration name="TestSolver.test3x3BoardPuzzles" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSolver_test4x4BoardPuzzles - 2019.07.09 at 11h 11m 23s.xml">
+      <configuration name="TestSolver.test4x4BoardPuzzles" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSolver_test2x2BoardPuzzles - 2019.07.09 at 11h 13m 09s.xml">
+      <configuration name="TestSolver.test2x2BoardPuzzles" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSolver_test2x2BoardPuzzles - 2019.07.09 at 11h 17m 35s.xml">
+      <configuration name="TestSolver.test2x2BoardPuzzles" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSolver_test2x2BoardPuzzles - 2019.07.09 at 11h 21m 53s.xml">
+      <configuration name="TestSolver.test2x2BoardPuzzles" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSolver_test2x2BoardPuzzles - 2019.07.09 at 11h 22m 19s.xml">
+      <configuration name="TestSolver.test2x2BoardPuzzles" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSolver_test2x2BoardPuzzles - 2019.07.09 at 11h 23m 42s.xml">
+      <configuration name="TestSolver.test2x2BoardPuzzles" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSolver_testVariousPuzzles - 2019.07.09 at 11h 25m 53s.xml">
+      <configuration name="TestSolver.testVariousPuzzles" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1293" height="693" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25383994" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32978722" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39893618" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Style Checker" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32978722" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/hw4/puzzle/TestBoard.java</url>
+          <line>17</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/hw4/puzzle/AlphabetEasyPuzzle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="57" column="25" lean-forward="true" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#518#519#0" expanded="true" />
+            <element signature="e#1183#1184#0" expanded="true" />
+            <element signature="e#1221#1222#0" expanded="true" />
+            <element signature="e#1677#1678#0" expanded="true" />
+            <element signature="e#1709#1710#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw4/puzzle/TestSearchNode.java" />
+    <entry file="file://$PROJECT_DIR$/hw4/puzzle/AlphabetEasyPuzzleSolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw4/puzzle/WorldState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="46" lean-forward="true" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
+          <folding>
+            <element signature="e#361#362#0" expanded="true" />
+            <element signature="e#414#415#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../skeleton-sp19/library-sp19/javalib/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw4/puzzle/TestBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw4/puzzle/Word.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/net/URL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1698">
+          <caret line="649" column="22" selection-start-line="649" selection-start-column="22" selection-end-line="649" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input/puzzle2x2-02.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input/puzzle2x2-04.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input/puzzle01.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input/puzzle3x3-00.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input/puzzle3x3-01.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw4/puzzle/CommonBugDetector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-281">
+          <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw4/puzzle/WordPuzzleSolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw4/puzzle/Solver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw4/puzzle/EightPuzzleSolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw4/puzzle/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="90" column="9" lean-forward="true" selection-start-line="90" selection-start-column="9" selection-end-line="90" selection-end-column="9" />
+          <folding>
+            <element signature="e#671#672#0" expanded="true" />
+            <element signature="e#695#696#0" expanded="true" />
+            <element signature="e#3263#3264#0" expanded="true" />
+            <element signature="e#3297#3298#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw4/puzzle/TestSolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-758">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw4/puzzle/searchNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>12</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>hw4</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
