@@ -5,9 +5,9 @@ import edu.princeton.cs.algs4.Stack;
 
 
 public class Solver {
-    public MinPQ<searchNode> pq = new MinPQ<>();
-    public searchNode start;
-    public searchNode goal;
+    private MinPQ<searchNode> pq = new MinPQ<>();
+    private searchNode start;
+    private searchNode goal;
 
     public Solver(WorldState initial) {
         goal = null;
@@ -28,6 +28,9 @@ public class Solver {
     }
 
     public int moves() {
+        if (goal == start) {
+            return 0;
+        }
         return goal.M;
     }
 

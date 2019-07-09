@@ -1,8 +1,8 @@
 package hw4.puzzle;
 
 public class searchNode implements Comparable<searchNode> {
-    public int priority;
-    public int E;
+    private int priority;
+    private int E;
     public int M;
     public searchNode prev;
     public WorldState current;

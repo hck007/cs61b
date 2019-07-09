@@ -3,9 +3,9 @@ import edu.princeton.cs.algs4.Queue;
 
 
 public class Board implements WorldState{
-    public int[][] board;
-    public int N;
-    public int[][] goal;
+    private int[][] board;
+    private int N;
+    private int[][] goal;
 
     public Board(int[][] tiles) {
         N = tiles.length;
@@ -14,6 +14,9 @@ public class Board implements WorldState{
         goal[N - 1][N - 1] = 0;
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < N; j++) {
+                if (tiles[i][j] > N * N - 1 || tiles[i][j] < 0) {
+                    throw new IndexOutOfBoundsException();
+                }
                 board[i][j] = tiles[i][j];
                 goal[i][j] = i * N + j + 1;
             }
@@ -70,7 +73,7 @@ public class Board implements WorldState{
         int hamming = 0;
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < N; j++) {
-                if (board[i][j] != goal[i][j]) {
+                if (board[i][j] != goal[i][j] && board[i][j] != 0) {
                     hamming++;
                 }
             }
@@ -92,33 +95,6 @@ public class Board implements WorldState{
         return manhattan;
     }
 
-/*
-    public int manhattan() {
-
-        int d = 0;
-
-        for (int i = 0; i < size(); i++) {
-
-            for (int j = 0; j < size(); j ++) {
-
-                if (board[i][j] != 0) {
-
-                    int expectedR = (board[i][j] - 1) / size();
-
-                    int expectedC = (board[i][j] - 1) % size();
-
-                    d += (Math.abs(expectedR - i) + Math.abs(expectedC - j));
-
-                }
-
-            }
-
-        }
-
-        return d;
-
-    }*/
-
     public int estimatedDistanceToGoal() {
         return manhattan();
     }
@@ -130,7 +106,13 @@ public class Board implements WorldState{
         if (this.getClass() != y.getClass()) {
             return false;
         }
+        if (y == null) {
+            return false;
+        }
         Board other = (Board) y;
+        if (this.N != ((Board) y).N) {
+            return false;
+        }
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < N; j++) {
                 if (this.board[i][j] != other.board[i][j]) {
@@ -141,13 +123,20 @@ public class Board implements WorldState{
         return true;
     }
 
+    @Override
+    public int hashCode() {
+        int result = 0;
+        result = result * 31 + goal.hashCode();
+        return result;
+    }
+
     public String toString() {
         StringBuilder s = new StringBuilder();
         int N = size();
         s.append(N + "\n");
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < N; j++) {
-                s.append(String.format("%2d ", tileAt(i,j)));
+                s.append(String.format("%2d ", tileAt(i, j)));
             }
             s.append("\n");
         }
