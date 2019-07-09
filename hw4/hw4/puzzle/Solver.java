@@ -42,6 +42,32 @@ public class Solver {
         }
         return solution;
     }
+
+    public class searchNode implements Comparable<searchNode> {
+        private int priority;
+        private int E;
+        private int M;
+        private searchNode prev;
+        private WorldState current;
+
+        private searchNode(WorldState c, int moves, searchNode p) {
+            current = c;
+            M = moves;
+            E = current.estimatedDistanceToGoal();
+            priority = E + M;
+            prev = p;
+        }
+
+        private int priority() {
+            return priority;
+        }
+
+
+        @Override
+        public int compareTo(searchNode o) {
+            return this.priority - o.priority;
+        }
+    }
 }
 
 
