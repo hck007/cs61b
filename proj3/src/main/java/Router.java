@@ -59,7 +59,7 @@ public class Router {
             if (fringe.containsKey(w)) {
                 double heuristic = h(g, w, finalID);
                 fringe.put(w, disTo.get(w) + heuristic);
-                pq.remove(g.getNode(w));
+                //pq.remove(g.getNode(w));
                 pq.add(g.getNode(w));
             } else {
                 double heuristic = h(g, w, finalID);
