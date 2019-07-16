@@ -80,6 +80,9 @@ public class Router {
         long nextNode = edgeTo.get(finalID);
         while (nextNode != startingID) {
             backTrack.push(nextNode);
+            if (edgeTo.get(nextNode) == null) {
+                break;
+            }
             nextNode = edgeTo.get(nextNode);
 
         }
