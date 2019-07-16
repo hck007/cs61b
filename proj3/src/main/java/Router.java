@@ -40,7 +40,7 @@ public class Router {
         pq.add(g.getNode(startingID));
         while (!pq.isEmpty()) {
             long v = pq.poll().id;
-            fringe.remove(v);
+            //fringe.remove(v);
             if (v == finalID) {
                 break;
             }

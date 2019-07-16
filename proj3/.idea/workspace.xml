@@ -8,7 +8,6 @@
       <change beforePath="$PROJECT_DIR$/../proj1a/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1a/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../proj1b/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../proj1b/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1b/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GraphDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GraphDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Router.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Router.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -27,7 +26,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestRouterTiny.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="374">
               <caret line="28" selection-start-line="28" selection-end-line="28" />
             </state>
           </provider>
@@ -36,7 +35,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestRouter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-425">
+            <state relative-caret-position="-527">
               <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
             </state>
           </provider>
@@ -45,12 +44,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Router.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="65" column="56" lean-forward="true" selection-start-line="65" selection-start-column="56" selection-end-line="65" selection-end-column="56" />
+            <state relative-caret-position="-4266">
+              <caret line="42" column="14" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3109#3110#0" expanded="true" />
-                <element signature="e#6680#6681#0" expanded="true" />
+                <element signature="e#3111#3112#0" expanded="true" />
+                <element signature="e#6682#6683#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -257,24 +256,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestRouterTiny_test22to11 - 2019.07.16 at 15h 17m 04s.xml">
-      <configuration name="TestRouterTiny.test22to11" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestRouterTiny_test22to66 - 2019.07.16 at 15h 17m 21s.xml">
-      <configuration name="TestRouterTiny.test22to66" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestRouterTiny_test22to66 - 2019.07.16 at 15h 18m 46s.xml">
-      <configuration name="TestRouterTiny.test22to66" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestRouterTiny_test22to66 - 2019.07.16 at 15h 22m 30s.xml">
-      <configuration name="TestRouterTiny.test22to66" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestRouterTiny_test22to66 - 2019.07.16 at 15h 25m 04s.xml">
-      <configuration name="TestRouterTiny.test22to66" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestRouterTiny_test22to66 - 2019.07.16 at 15h 26m 37s.xml">
-      <configuration name="TestRouterTiny.test22to66" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestRouterTiny_test22to66 - 2019.07.16 at 15h 30m 58s.xml">
       <configuration name="TestRouterTiny.test22to66" configurationId="JUnit" />
     </history-entry>
@@ -287,9 +268,27 @@
     <history-entry file="TestRouterTiny_test22to66 - 2019.07.16 at 15h 52m 17s.xml">
       <configuration name="TestRouterTiny.test22to66" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestRouterTiny_test22to66 - 2019.07.16 at 15h 54m 49s.xml">
+      <configuration name="TestRouterTiny.test22to66" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestRouterTiny_test22to66 - 2019.07.16 at 15h 56m 03s.xml">
+      <configuration name="TestRouterTiny.test22to66" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestRouterTiny_test22to11 - 2019.07.16 at 15h 56m 08s.xml">
+      <configuration name="TestRouterTiny.test22to11" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestRouterTiny - 2019.07.16 at 15h 56m 13s.xml">
+      <configuration name="TestRouterTiny" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestRouter - 2019.07.16 at 15h 56m 20s.xml">
+      <configuration name="TestRouter" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestRouter - 2019.07.16 at 16h 57m 09s.xml">
+      <configuration name="TestRouter" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1293" height="693" extended-state="6" />
+    <frame x="-7" y="-7" width="1293" height="693" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.261924" />
@@ -301,7 +300,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32978722" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32978722" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39893618" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -320,18 +319,6 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Router.java</url>
-          <line>64</line>
-          <properties />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/GraphDBLauncher.java">
@@ -459,20 +446,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestRouter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-425">
-          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestRouterTiny.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../skeleton-sp19/library-sp19/javalib/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -494,14 +467,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestRouterTiny.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestRouter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-527">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Router.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="65" column="56" lean-forward="true" selection-start-line="65" selection-start-column="56" selection-end-line="65" selection-end-column="56" />
+        <state relative-caret-position="-4266">
+          <caret line="42" column="14" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3109#3110#0" expanded="true" />
-            <element signature="e#6680#6681#0" expanded="true" />
+            <element signature="e#3111#3112#0" expanded="true" />
+            <element signature="e#6682#6683#0" expanded="true" />
           </folding>
         </state>
       </provider>
