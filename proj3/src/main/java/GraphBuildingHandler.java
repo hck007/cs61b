@@ -72,9 +72,9 @@ public class GraphBuildingHandler extends DefaultHandler {
         if (qName.equals("node")) {
             /* We encountered a new <node...> tag. */
             activeState = "node";
-            System.out.println("Node id: " + attributes.getValue("id"));
-            System.out.println("Node lon: " + attributes.getValue("lon"));
-            System.out.println("Node lat: " + attributes.getValue("lat"));
+            //System.out.println("Node id: " + attributes.getValue("id"));
+            //System.out.println("Node lon: " + attributes.getValue("lon"));
+            //System.out.println("Node lat: " + attributes.getValue("lat"));
 
             /* TODO Use the above information to save a "node" to somewhere. */
             /* Hint: A graph-like structure would be nice. */
@@ -92,7 +92,7 @@ public class GraphBuildingHandler extends DefaultHandler {
 //            System.out.println("Beginning a way...");
         } else if (activeState.equals("way") && qName.equals("nd")) {
             /* While looking at a way, we found a <nd...> tag. */
-            System.out.println("Id of a node in this way: " + attributes.getValue("ref"));
+            //System.out.println("Id of a node in this way: " + attributes.getValue("ref"));
             long id = Long.parseLong(attributes.getValue("ref"));
             tempWay.add(id);
             /* TODO Use the above id to make "possible" connections between the nodes in this way */
@@ -107,18 +107,18 @@ public class GraphBuildingHandler extends DefaultHandler {
             String k = attributes.getValue("k");
             String v = attributes.getValue("v");
             if (k.equals("maxspeed")) {
-                System.out.println("Max Speed: " + v);
+                //System.out.println("Max Speed: " + v);
                 /* TODO set the max speed of the "current way" here. */
                 //wayInfo.put("maxspeed", v);
             } else if (k.equals("highway")) {
-                System.out.println("Highway type: " + v);
+                //System.out.println("Highway type: " + v);
                 /* TODO Figure out whether this way and its connections are valid. */
                 /* Hint: Setting a "flag" is good enough! */
                 if (ALLOWED_HIGHWAY_TYPES.contains(v)) {
                     tempWayValid = true;
                 }
             } else if (k.equals("name")) {
-                System.out.println("Way Name: " + v);
+                //System.out.println("Way Name: " + v);
                 tempName = v;
             }
 //            System.out.println("Tag with k=" + k + ", v=" + v + ".");
