@@ -236,6 +236,21 @@ public class GraphDB {
             lon = longitude;
             lat = latitude;
         }
+
+        @Override
+        public boolean equals(Object other) {
+            if (this.getClass() != other.getClass()) {
+                return false;
+            }
+            if (this == other) {
+                return true;
+            }
+            other = (Node) other;
+            if (this.id == ((Node) other).id) {
+                return true;
+            }
+            return false;
+        }
     }
 
     static class Edge {

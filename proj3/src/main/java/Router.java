@@ -14,6 +14,7 @@ public class Router {
     private static Map<Long, Double> disTo = new HashMap<>();
     private static Map<Long, Long> edgeTo = new HashMap<>();
     private static Map<Long, Double> fringe = new HashMap<>();
+    private static PriorityQueue<GraphDB.Node> pq = new PriorityQueue<>(new nodeComparator());
     //private static List<Long> shortestPath = new ArrayList<>();
     /**
      * Return a List of longs representing the shortest path from the node
@@ -27,7 +28,70 @@ public class Router {
      * @return A list of node id's in the order visited on the shortest path.
      */
 
+    public static List<Long> shortestPath(GraphDB g, double stlon, double stlat,
+                                          double destlon, double destlat) {
+        long startingID = g.closest(stlon, stlat);
+        long finalID = g.closest(destlon, destlat);
+        for (long id : g.vertices()) {
+            disTo.put(id, Double.POSITIVE_INFINITY);
+        }
+        disTo.put(startingID, 0.0);
+        fringe.put(startingID, disTo.get(startingID));
+        pq.add(g.getNode(startingID));
+        while (!pq.isEmpty()) {
+            long v = pq.poll().id;
+            fringe.remove(v);
+            if (v == finalID) {
+                break;
+            }
+            for (long w : g.getNode(v).adj) {
+                relax(g, v, w, finalID);
+            }
+        }
+        return printPath(startingID, finalID);
+    }
 
+    private static void relax(GraphDB g, long v, long w, long finalID) {
+        double edgeWeight = g.distance(v, w);
+        if (disTo.get(w) > disTo.get(v) + edgeWeight) {
+            disTo.put(w, disTo.get(v) + edgeWeight);
+            edgeTo.put(w, v);
+            if (fringe.containsKey(w)) {
+                double heuristic = h(g, w, finalID);
+                fringe.put(w, disTo.get(w) + heuristic);
+                pq.remove(g.getNode(w));
+                pq.add(g.getNode(w));
+            } else {
+                double heuristic = h(g, w, finalID);
+                fringe.put(w, disTo.get(w) + heuristic);
+                pq.add(g.getNode(w));
+            }
+        }
+    }
+
+    private static double h(GraphDB g, long id, long finalID) {
+        return g.distance(id, finalID);
+    }
+
+    private static List<Long> printPath(long startingID, long finalID) {
+        List<Long> shortestPath = new ArrayList<>();
+        Stack<Long> backTrack = new Stack<>();
+        backTrack.push(finalID);
+        long nextNode = edgeTo.get(finalID);
+        while (nextNode != startingID) {
+            backTrack.push(nextNode);
+            nextNode = edgeTo.get(nextNode);
+
+        }
+        backTrack.push(nextNode);
+        while (!backTrack.isEmpty()) {
+            long id = backTrack.pop();
+            shortestPath.add(id);
+        }
+        return shortestPath;
+    }
+
+/*
     public static List<Long> shortestPath(GraphDB g, double stlon, double stlat,
                                           double destlon, double destlat) {
         long startingID = g.closest(stlon, stlat);
@@ -37,7 +101,7 @@ public class Router {
             fringe.put(id, Double.POSITIVE_INFINITY);
         }
         disTo.put(startingID, 0.0);
-        disTo.put(finalID, Double.POSITIVE_INFINITY);
+        //disTo.put(finalID, Double.POSITIVE_INFINITY);
         fringe.put(startingID, disTo.get(startingID));
         while (!fringe.isEmpty()) {
             long v = findSmallest(fringe);
@@ -100,7 +164,7 @@ public class Router {
         }
         return shortestPath;
     }
-
+*/
     /**
      * Create the list of directions corresponding to a route on the graph.
      * @param g The graph to use.
@@ -237,8 +301,11 @@ public class Router {
     public static class nodeComparator implements Comparator<GraphDB.Node> {
         @Override
         public int compare(GraphDB.Node n1, GraphDB.Node n2) {
-            double dis1 = disTo.get(n1.id);
-            double dis2 = disTo.get(n2.id);
+            if (n1 == null || n2 == null) {
+                return 1;
+            }
+            double dis1 = fringe.get(n1.id);
+            double dis2 = fringe.get(n2.id);
             if (dis1 < dis2) {
                 return -1;
             }
