@@ -12,7 +12,7 @@ import java.util.Map;
 public class Rasterer {
     private double[] lonDPPList;
     private static final double ROOT_ULLAT = 37.892195547244356, ROOT_ULLON = -122.2998046875,
-    ROOT_LRLAT = 37.82280243352756, ROOT_LRLON = -122.2119140625;
+            ROOT_LRLAT = 37.82280243352756, ROOT_LRLON = -122.2119140625;
     private static final double[] WIDTH_UNIT = {0.087890625, 0.0439453125, 0.02197265625, 0.010986328125,
             0.0054931640625, 0.00274658203125, 0.001373291015625, 0.0006866455078125};
     private static final double[] HEIGHT_UNIT = {0.06939311371679224, 0.03469655685839257, 0.017348278429196284,
@@ -87,8 +87,7 @@ public class Rasterer {
             results.put("raster_lr_lat", null);
             results.put("depth", depth);
             results.put("query_success", query_success);
-        }
-        else {
+        } else {
             boolean query_success = true;
             String[][] render_grid = getImage(depth, ullon, ullat, lrlon, lrlat);
             results.put("render_grid", render_grid);

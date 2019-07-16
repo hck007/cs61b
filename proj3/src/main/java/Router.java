@@ -1,5 +1,4 @@
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -12,6 +11,10 @@ import java.util.regex.Pattern;
  * down to the priority you use to order your vertices.
  */
 public class Router {
+    private static Map<Long, Double> disTo = new HashMap<>();
+    private static Map<Long, Long> edgeTo = new HashMap<>();
+    private static Map<Long, Double> fringe = new HashMap<>();
+    //private static List<Long> shortestPath = new ArrayList<>();
     /**
      * Return a List of longs representing the shortest path from the node
      * closest to a start location and the node closest to the destination
@@ -23,9 +26,79 @@ public class Router {
      * @param destlat The latitude of the destination location.
      * @return A list of node id's in the order visited on the shortest path.
      */
+
+
     public static List<Long> shortestPath(GraphDB g, double stlon, double stlat,
                                           double destlon, double destlat) {
-        return null; // FIXME
+        long startingID = g.closest(stlon, stlat);
+        long finalID = g.closest(destlon, destlat);
+        for (long id : g.vertices()) {
+            disTo.put(id, Double.POSITIVE_INFINITY);
+            fringe.put(id, Double.POSITIVE_INFINITY);
+        }
+        disTo.put(startingID, 0.0);
+        disTo.put(finalID, Double.POSITIVE_INFINITY);
+        fringe.put(startingID, disTo.get(startingID));
+        while (!fringe.isEmpty()) {
+            long v = findSmallest(fringe);
+            if (v == finalID) {
+                break;
+            }
+            fringe.remove(v);
+            for (long w : g.getNode(v).adj) {
+                relax(g, v , w, finalID);
+            }
+        }
+        return printPath(startingID, finalID);
+
+    }
+
+    private static void relax(GraphDB g, long v, long w, long finalID) {
+        double edgeWeight = g.distance(v, w);
+        if (disTo.get(w) > disTo.get(v) + edgeWeight) {
+            disTo.put(w, disTo.get(v) + edgeWeight);
+            edgeTo.put(w, v);
+            double heuristic = h(g, w, finalID);
+            fringe.put(w, disTo.get(v) + edgeWeight + heuristic);
+        }
+    }
+
+    private static double h(GraphDB g, long id, long finalID) {
+        return g.distance(id, finalID);
+    }
+
+    private static long findSmallest(Map<Long, Double> fringe) {
+        double currentDistance;
+        double minDistance = Double.POSITIVE_INFINITY;
+        long currentID;
+        long finalID = 111;
+        for (long id : fringe.keySet()) {
+            currentID = id;
+            currentDistance = fringe.get(id);
+            if (currentDistance < minDistance) {
+                minDistance = currentDistance;
+                finalID = currentID;
+            }
+        }
+        return finalID;
+    }
+
+    private static List<Long> printPath(long startingID, long finalID) {
+        List<Long> shortestPath = new ArrayList<>();
+        Stack<Long> backTrack = new Stack<>();
+        backTrack.push(finalID);
+        long nextNode = edgeTo.get(finalID);
+        while (nextNode != startingID) {
+            backTrack.push(nextNode);
+            nextNode = edgeTo.get(nextNode);
+
+        }
+        backTrack.push(nextNode);
+        while (!backTrack.isEmpty()) {
+            long id = backTrack.pop();
+            shortestPath.add(id);
+        }
+        return shortestPath;
     }
 
     /**
@@ -160,4 +233,21 @@ public class Router {
             return Objects.hash(direction, way, distance);
         }
     }
+
+    public static class nodeComparator implements Comparator<GraphDB.Node> {
+        @Override
+        public int compare(GraphDB.Node n1, GraphDB.Node n2) {
+            double dis1 = disTo.get(n1.id);
+            double dis2 = disTo.get(n2.id);
+            if (dis1 < dis2) {
+                return -1;
+            }
+            if (dis1 > dis2) {
+                return 1;
+            }
+            return 0;
+        }
+    }
+
+
 }
