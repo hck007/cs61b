@@ -34,14 +34,14 @@ public class MazeAStarPath extends MazeExplorer {
 
     /** Finds vertex estimated to be closest to target. */
     private void findMinimumUnmarked(int v, int w, IndexMinPQ pq) {
-        if (distTo[w] > distTo[v] + h(w)) {
-            distTo[w] = distTo[v] + h(w);
+        if (distTo[w] > distTo[v] + 1) {
+            distTo[w] = distTo[v] + 1;
             edgeTo[w] = v;
             announce();
             if (pq.contains(w)) {
-                pq.decreaseKey(w, distTo[w]);
+                pq.decreaseKey(w, distTo[w] + h(w));
             } else {
-                pq.insert(w, distTo[w]);
+                pq.insert(w, distTo[w] + h(w));
         }
         }
     }
