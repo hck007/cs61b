@@ -80,7 +80,7 @@ public class MergeSort {
             return items;
         }
         Queue<Queue<Item>> sortedQueue = makeSingleItemQueues(items);
-        while (sortedQueue.size() > 0) {
+        while (sortedQueue.size() > 1) {
             Queue<Item> q1 = sortedQueue.dequeue();
             Queue<Item> q2 = sortedQueue.dequeue();
             sortedQueue.enqueue(mergeSortedQueues(q1, q2));

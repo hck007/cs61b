@@ -25,8 +25,21 @@ public class MergeSortTest {
         }
     }
 
+    public static void TestAll() {
+        Queue<String> q = new Queue<>();
+        q.enqueue("apple");
+        q.enqueue("zebra");
+        q.enqueue("bob");
+        q.enqueue("erskine");
+        Queue<String> ans = MergeSort.mergeSort(q);
+        for (String i : ans) {
+            System.out.println(i);
+        }
+    }
+
     public static void main(String[] args) {
         //TestMakesingleItemQueues();
-        TestMergeSortedQueues();
+        //TestMergeSortedQueues();
+        TestAll();
     }
 }
