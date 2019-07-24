@@ -1,5 +1,5 @@
 import edu.princeton.cs.algs4.Picture;
-import java.awt.*;
+import java.awt.Color;
 import java.util.ArrayList;
 import java.util.List;
 import edu.princeton.cs.algs4.IndexMinPQ;
@@ -115,7 +115,7 @@ public class SeamCarver {
         } else {
             for (int i = 1; i < picture.height(); i++) {
                 if (Math.abs(seam[i] - seam[i - 1]) > 1) {
-                    throw new IllegalArgumentException("invalid seam, two consecutive seams are 1 column apart");
+                    throw new IllegalArgumentException("invalid seam, two consecutive seams");
                 }
             }
         }
@@ -137,11 +137,11 @@ public class SeamCarver {
         int[][] neighbors = new int[2][2];
         int[] left = new int[2];
         int[] right = new int[2];
-        int x_left = (x - 1 + picture.width()) % picture.width();
-        int x_right = (x + 1 + picture.width()) % picture.width();
-        left[0] = x_left;
+        int xLeft = (x - 1 + picture.width()) % picture.width();
+        int xRight = (x + 1 + picture.width()) % picture.width();
+        left[0] = xLeft;
         left[1] = y;
-        right[0] = x_right;
+        right[0] = xRight;
         right[1] = y;
         neighbors[0] = left;
         neighbors[1] = right;
@@ -152,12 +152,12 @@ public class SeamCarver {
         int[][] neighbors = new int[2][2];
         int[] top = new int[2];
         int[] bottom = new int[2];
-        int y_top = (y - 1 + picture.height()) % picture.height();
-        int y_bottom = (y + 1 + picture.height()) % picture.height();
+        int yTop = (y - 1 + picture.height()) % picture.height();
+        int yBottom = (y + 1 + picture.height()) % picture.height();
         top[0] = x;
-        top[1] = y_top;
+        top[1] = yTop;
         bottom[0] = x;
-        bottom[1] = y_bottom;
+        bottom[1] = yBottom;
         neighbors[0] = top;
         neighbors[1] = bottom;
         return neighbors;
@@ -255,9 +255,10 @@ public class SeamCarver {
         return x % p.width();
     }
 
+    /*
     private int getRow(int x, Picture p) {
         return x / p.width();
-    }
+    }*/
 
     private Picture transpose() {
         Picture p = picture();
@@ -266,7 +267,8 @@ public class SeamCarver {
             for (int column = 0; column < transposedP.width(); column++) {
                 Color c = p.get(row, column);
                 transposedP.set(column, row, c);
-                transposedEnergyMap[xyTo1D(column, row, transposedP)] = energyMap[xyTo1D(row, column, p)];
+                transposedEnergyMap[xyTo1D(column, row, transposedP)]
+                        = energyMap[xyTo1D(row, column, p)];
             }
         }
         return transposedP;
