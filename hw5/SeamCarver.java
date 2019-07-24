@@ -1,4 +1,5 @@
 import edu.princeton.cs.algs4.Picture;
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 import edu.princeton.cs.algs4.IndexMinPQ;
@@ -6,27 +7,47 @@ import edu.princeton.cs.algs4.Stack;
 
 public class SeamCarver {
     private Picture picture;
-    private IndexMinPQ<Double> fringe;
-    private double[] disTo;
     private int[] edgeTo;
+    private double[] energyMap;
+    private double[] transposedEnergyMap;
 
     public SeamCarver(Picture picture) {
-        this.picture = new Picture(picture);
-        fringe = new IndexMinPQ<>(picture.width() * picture.height());
-        disTo = new double[picture.width() * picture.height()];
+        this.picture = picture;
         edgeTo = new int[picture.width() * picture.height()];
-        for (int i = 0; i < picture.width(); i++) {
-            fringe.insert(i, energy(i, 0));
-            disTo[i] = energy(i, 0);
-        }
-        for (int i = picture.width(); i < picture.width() * picture.height(); i++) {
-            fringe.insert(i, Double.POSITIVE_INFINITY);
-            disTo[i] = Double.POSITIVE_INFINITY;
+        energyMap = new double[picture.width() * picture.height()];
+        transposedEnergyMap = new double[picture.width() * picture.height()];
+        for (int row = 0; row < picture.height(); row++) {
+            for (int column = 0; column < picture.width(); column++) {
+                int id = xyTo1D(column, row, picture);
+                energyMap[id] = energy(column, row);
+            }
         }
     }
 
+    private IndexMinPQ<Double> getFringe(Picture p, double[] e) {
+        IndexMinPQ<Double> fringe = new IndexMinPQ<>(p.width() * p.height());
+        for (int i = 0; i < p.width(); i++) {
+            fringe.insert(i, e[i]);
+        }
+        for (int i = p.width(); i < p.width() * p.height(); i++) {
+            fringe.insert(i, Double.POSITIVE_INFINITY);
+        }
+        return fringe;
+    }
+
+    private double[] getDistance(Picture p, double[] e) {
+        double[] disTo = new double[p.width() * p.height()];
+        for (int i = 0; i < p.width(); i++) {
+            disTo[i] = e[i];
+        }
+        for (int i = p.width(); i < p.width() * p.height(); i++) {
+            disTo[i] = Double.POSITIVE_INFINITY;
+        }
+        return disTo;
+    }
+
     public Picture picture() {
-        return picture;
+        return new Picture(picture);
     }
 
     public int width() {
@@ -43,30 +64,48 @@ public class SeamCarver {
     }
 
     public int[] findHorizontalSeam() {
-        return null;
-    }
-
-    public int[] findVerticalSeam() {
-        int[] ans = new int[picture.height()];
+        edgeTo = new int[picture.width() * picture.height()];
+        Picture p = transpose();
+        int[] ans = new int[p.height()];
         Stack<Integer> track = new Stack<>();
-        int destination = shortestPath();
-        for (int i = 0; i < picture.height(); i++) {
+        double[] e = transposedEnergyMap;
+        int destination = shortestPath(p, e);
+        for (int i = 0; i < p.height(); i++) {
             track.push(destination);
             destination = edgeTo[destination];
         }
         int i = 0;
         while (!track.isEmpty()) {
-            ans[i] = getColumn(track.pop());
+            ans[i] = getColumn(track.pop(), p);
+            i++;
+        }
+        return ans;
+    }
+
+    public int[] findVerticalSeam() {
+        Picture p = picture;
+        int[] ans = new int[p.height()];
+        Stack<Integer> track = new Stack<>();
+        double[] e = energyMap;
+        int destination = shortestPath(p, e);
+        for (int i = 0; i < p.height(); i++) {
+            track.push(destination);
+            destination = edgeTo[destination];
+        }
+        int i = 0;
+        while (!track.isEmpty()) {
+            ans[i] = getColumn(track.pop(), p);
             i++;
         }
         return ans;
     }
 
     public void removeHorizontalSeam(int[] seam) {
-
+        SeamRemover.removeHorizontalSeam(picture, seam);
     }
 
     public void removeVerticalSeam(int[] seam) {
+        /*
         if (seam == null) {
             throw new NullPointerException("no input");
         } else if (picture.height() == 1) {
@@ -90,7 +129,8 @@ public class SeamCarver {
                 newPicture.set(column, row, picture.get(column, row));
             }
         }
-        picture = newPicture;
+        picture = newPicture;*/
+        SeamRemover.removeVerticalSeam(picture, seam);
     }
 
     private int[][] getXNeighbors(int x, int y) {
@@ -151,28 +191,28 @@ public class SeamCarver {
         }
     }
 
-    private List<List<Integer>> getAdj() {
+    private List<List<Integer>> getAdj(Picture p) {
         List<List<Integer>> adj = new ArrayList<>();
-        for (int i = 0; i < picture.width() * (picture.height() - 1); i++) {
-            if (i % picture.width() == 0) {
+        for (int i = 0; i < p.width() * (p.height() - 1); i++) {
+            if (i % p.width() == 0) {
                 List<Integer> neighbors = new ArrayList<>();
-                neighbors.add(i + picture.width());
-                neighbors.add(i + 1 + picture.width());
+                neighbors.add(i + p.width());
+                neighbors.add(i + 1 + p.width());
                 adj.add(i, neighbors);
-            } else if ((i + 1) % picture.width() == 0) {
+            } else if ((i + 1) % p.width() == 0) {
                 List<Integer> neighbors = new ArrayList<>();
-                neighbors.add(i + picture.width());
-                neighbors.add(i + picture.width() - 1);
+                neighbors.add(i + p.width());
+                neighbors.add(i + p.width() - 1);
                 adj.add(i, neighbors);
             } else {
                 List<Integer> neighbors = new ArrayList<>();
-                neighbors.add(i + picture.width() - 1);
-                neighbors.add(i + picture.width());
-                neighbors.add(i + 1 + picture.width());
+                neighbors.add(i + p.width() - 1);
+                neighbors.add(i + p.width());
+                neighbors.add(i + 1 + p.width());
                 adj.add(i, neighbors);
             }
         }
-        for (int i = picture.width() * (picture.height() - 1); i < picture.width() * picture.height(); i++) {
+        for (int i = p.width() * (p.height() - 1); i < p.width() * p.height(); i++) {
             List<Integer> neighbors = new ArrayList<>();
             neighbors.add(null);
             adj.add(i, neighbors);
@@ -180,40 +220,55 @@ public class SeamCarver {
         return adj;
     }
 
-    private int shortestPath() {
+    private int shortestPath(Picture p, double[] e) {
         int destination = -1;
-        List<List<Integer>> adj = getAdj();
+        List<List<Integer>> adj = getAdj(p);
+        IndexMinPQ<Double> fringe = getFringe(p, e);
+        double[] disTo = getDistance(p, e);
         while (!fringe.isEmpty()) {
             int v = fringe.delMin();
-            if (v < picture.height() * picture.width() && v >= (picture.height() - 1) * picture.width()) {
+            if (v < p.height() * p.width() && v >= (p.height() - 1) * p.width()) {
                 destination = v;
                 break;
             } else {
                 for (int w : adj.get(v)) {
-                    relax(v, w);
+                    relax(v, w, fringe, disTo, e);
                 }
             }
         }
         return destination;
     }
 
-    private void relax(int v, int w) {
-        if (disTo[w] > disTo[v] + energy(getColumn(w), getRow(w))) {
-            disTo[w] = disTo[v] + energy(getColumn(w), getRow(w));
+    private void relax(int v, int w, IndexMinPQ<Double> fringe, double[] disTo, double[] e) {
+        if (disTo[w] > disTo[v] + e[w]) {
+            disTo[w] = disTo[v] + e[w];
             edgeTo[w] = v;
             fringe.decreaseKey(w, disTo[w]);
         }
     }
 
-    private int xyTo1D(int x, int y) {
-        return x + y * picture.width();
+    private int xyTo1D(int x, int y, Picture p) {
+        return x + y * p.width();
     }
 
-    private int getColumn(int x) {
-        return x % picture.width();
+    private int getColumn(int x, Picture p) {
+        return x % p.width();
     }
 
-    private int getRow(int x) {
-        return x / picture.width();
+    private int getRow(int x, Picture p) {
+        return x / p.width();
+    }
+
+    private Picture transpose() {
+        Picture p = picture();
+        Picture transposedP = new Picture(p.height(), p.width());
+        for (int row = 0; row < transposedP.height(); row++) {
+            for (int column = 0; column < transposedP.width(); column++) {
+                Color c = p.get(row, column);
+                transposedP.set(column, row, c);
+                transposedEnergyMap[xyTo1D(column, row, transposedP)] = energyMap[xyTo1D(row, column, p)];
+            }
+        }
+        return transposedP;
     }
 }
