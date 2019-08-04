@@ -58,10 +58,9 @@ public class Boggle {
         if (marked[source]) {
             return;
         }
-        String letter = Character.toString(b.getChar(source));
-        marked[source] = true;
-        if (dict.containsPrefix(letter)) {
-            word += letter;
+        word += Character.toString(b.getChar(source));
+        if (dict.containsPrefix(word)) {
+            marked[source] = true;
             if (dict.containsWord(word)) {
                 allWords.add(word);
             }
@@ -69,6 +68,8 @@ public class Boggle {
                 DFS(adj, dict, w, marked, word);
             }
             marked[source] = false;
+        } else {
+            return;
         }
     }
 

@@ -1,67 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ChangeListManager">
-    <list default="true" id="7cb0418f-a755-4c6f-a898-448931350669" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Boggle.java" beforeDir="false" afterPath="$PROJECT_DIR$/Boggle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab12/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab12/MergeSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab12/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab12/QuickSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab13/CountingSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab13/CountingSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab13/RadixSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab13/RadixSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj3/src/main/java/Rasterer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proj3/src/main/java/Rasterer.java" afterDir="false" />
-    </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="SHOW_DIALOG" value="false" />
-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
-    <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1Odu6GqkXIIt1XWnqs1OuFoode4" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1OxRubYsryNcTiQEgEhHWT7fXt1" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.TestBoggle">
-    <configuration name="TestBoard" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TestBoard" />
-      <module name="hw6" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="TestBoggle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TestBoggle" />
-      <module name="hw6" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestTrie" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TestTrie" />
       <module name="hw6" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -70,62 +18,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.TestBoggle" />
-        <item itemvalue="Application.TestTrie" />
-        <item itemvalue="Application.TestBoard" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
-  <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="7cb0418f-a755-4c6f-a898-448931350669" name="Default Changelist" comment="" />
-      <created>1564230089700</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1564230089700</updated>
-    </task>
-    <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/TestBoard.java</url>
-          <line>3</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>12</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
